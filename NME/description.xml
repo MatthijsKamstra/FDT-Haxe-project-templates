@@ -4,12 +4,18 @@
 	xsi:schemaLocation="http://fdt.powerflasher.com/ProjectTemplate ../../projectTemplate.xsd">
 	<name>NME - haXe</name>
 	<version>1.0</version>
-	<description>This template will create a haXe / NME project named '${projectName}'. -- Make sure the project name starts with an kapital (example: Foobar)${newline}</description>
+	<description>This template will create a haXe / NME project named '${projectName}'.${newline}!! Make sure the 'Project name:' starts with an capital (example: Foobar)${newline}This template doesn't install sdk-s'${newline}http://www.haxenme.org/developers/get-started/ </description>
 	<projectType>AS 3</projectType>
 	<variables>
 		<primaryGroup label="">
 			<variable name="appId" label="Application ID:" default="com.powerflasher.sampleApp" type="string" />
 			<variable name="mainClassName" label="Main Class:" type="string" default="Main"></variable>
+			<!--
+			<variable name="appId" label="Application ID:" default="com.powerflasher.SampleApp" type="string" />
+			<variable name="appName" label="Application Title:" default="My Application" type="string" />
+			<variable name="appVersion" label="Application Version:" default="0.0.0" type="string" />				
+			-->
+			
 			<!--><group label="Package:">
 				<variable name="domainName" label="Domain Name" default="com" type="string" />
 				<variable name="clientFolderName" label="Client Name" default="clientname" type="string" />
@@ -74,6 +80,7 @@
 
 		<!-- nmml file -->
 		<file src="xml/config.nmml" dest="config.nmml" process="true" />
+		<file src="xml/compile.xml" dest="compile.hxml" process="true" />
 		<!--
 		<file src="xml/config.nmml" dest="${outputFolder}/${fileName}.nmml" process="true" />
 		-->
