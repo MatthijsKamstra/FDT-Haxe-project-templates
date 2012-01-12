@@ -1,30 +1,3 @@
-projectName: ${projectName}
-appId: ${appId}
-mainClassName: ${mainClassName}
-domainName: ${domainName}
-clientFolderName: ${clientFolderName}
-projectFolderName: ${projectFolderName}
-appDescCompany: ${appDescCompany}
-appDescVersion: ${appDescVersion}
-appDescWidth: ${appDescWidth}
-appDescHeight: ${appDescHeight}
-appDescOrientation: ${appDescOrientation}
-appDescFps: ${appDescFps}
-appDescBackground: ${appDescBackground}
-appDescHardware: ${appDescHardware}
-appDescResizable: ${appDescResizable}
-postFileName: ${postFileName}
-fileName: ${fileName}
-postPackageStructure: ${postPackageStructure}
-packageSturcture: ${packageStructure}
-sourceFolder: ${sourceFolder}
-outputFolder:${outputFolder}
-
-
-
-
-
-
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++ SHell +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
