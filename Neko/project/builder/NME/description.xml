@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:projectTemplate xmlns:tns="http://fdt.powerflasher.com/ProjectTemplate"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://fdt.powerflasher.com/ProjectTemplate ../../projectTemplate.xsd">
+	<name>NME - haXe</name>
+	<version>1.0</version>
+	<description>This template will create a haXe / NME project named '${projectName}'. -- Make sure the project name starts with an kapital (example: Foobar)${newline}</description>
+	<projectType>AS 3</projectType>
+	<variables>
+		<primaryGroup label="">
+			<variable name="appId" label="Application ID:" default="com.powerflasher.sampleApp" type="string" />
+			<variable name="mainClassName" label="Main Class:" type="string" default="Main"></variable>
+			<!--><group label="Package:">
+				<variable name="domainName" label="Domain Name" default="com" type="string" />
+				<variable name="clientFolderName" label="Client Name" default="clientname" type="string" />
+				<variable name="projectFolderName" label="Project Name" default="projectname" type="string" />
+			</group>
+			-->
+			<group label="Configure NMML File Format" style="popupButton">
+				<group label="Edit NMML File Format">
+					<!-- The <app> Node -->
+					<variable name="appDescCompany" label="Company name" default="NME" type="string" />
+					<variable name="appDescVersion" label="Version" default="1.0.0" type="string" />
+					
+					<!-- The <window> Node -->
+					<variable name="appDescWidth" label="Width" default="640" type="int" />
+					<variable name="appDescHeight" label="Height" default="480" type="int" />
+					<variable name="appDescOrientation" label="Orientation" default="" type="enum('portrait','landscape')" /> 
+					<variable name="appDescFps" label="FPS" default="60" type="int" />
+					<variable name="appDescBackground" label="Background color" default="0xFFFFFF" type="string" /> 
+					<variable name="appDescHardware" label="Hardware rendering" default="true" type="boolean" /> 
+					<variable name="appDescResizable" label="Resizable" default="true" type="boolean" /> 
+				</group>
+			</group>
+		</primaryGroup>
+	</variables>
+	
+	<extensions>
+		<haxe>
+			<hxmlPath>compile.hxml</hxmlPath>
+			<mainClass>${appId}.${mainClassName}</mainClass>
+			<outputPath>${outputFolder}/flash/${mainClassName}.swf</outputPath>
+			<outputType>AVM2 (Flash 9+)</outputType>
+		</haxe>
+	</extensions>
+	
+	<expressions>
+
+		<!-- Helper Expressions -->
+		<expression name="postFileName"	value="replaceRegex(${projectName}, '([^\w]+)', '')" />
+		<expression name="fileName"	value="replaceRegex(${postFileName}, '(^\d+)', '')" />
+
+		<expression name="postPackageStructure" value="replaceRegex(${appId}, '([.]+)', '/')" />
+		<expression name="packageStructure" value="replaceRegex(${appId}, '([.]+)', '/')" />
+		
+		<expression name="sourceFolder" value="src" />
+		<expression name="outputFolder" value="bin" />
+	</expressions>
+	
+	<folders>
+		<sourceFolder>${sourceFolder}</sourceFolder>
+		<outputFolder>${outputFolder}</outputFolder>
+	</folders>
+	
+	<contentCreation processFileExtensions="as,mxml,xml,launch,html,hx,txt,sh,bat,nmml">
+		<!-- folder -->
+		<folder src="src" dest="${sourceFolder}" process="true" recursive="true" />
+		<folder src="bin" dest="${outputFolder}" process="true" recursive="true" />
+		<folder src="builder" dest="builder" process="true" recursive="true" />
+		<folder src="assets" dest="assets" process="false" recursive="true" />
+
+		<!-- file -->
+		<file src="hx/Main.hx" dest="${sourceFolder}/${packageStructure}/${mainClassName}.hx" process="true" />
+
+		<!-- nmml file -->
+		<file src="xml/config.nmml" dest="config.nmml" process="true" />
+		<!--
+		<file src="xml/config.nmml" dest="${outputFolder}/${fileName}.nmml" process="true" />
+		-->
+
+	</contentCreation>
+</tns:projectTemplate>
+
