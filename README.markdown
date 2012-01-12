@@ -12,7 +12,9 @@ To save you the time to manually setup a project we have created a project templ
 
 Win XP
 `C:\Documents and Settings\username\Application Data\FDT\projectTemplates\haXe`
+
 Windows 7
 `C:\Users\username\AppData\Roaming\FDT\projectTemplates\haXe`
+
 Mac
 `/Users/username/Library/Application Support/FDT/projectTemplates/haXe`
