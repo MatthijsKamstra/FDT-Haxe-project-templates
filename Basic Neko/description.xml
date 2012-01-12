@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:projectTemplate xmlns:tns="http://fdt.powerflasher.com/ProjectTemplate"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://fdt.powerflasher.com/ProjectTemplate ../../projectTemplate.xsd">
+	<name>Basic Neko</name>
+	<projectType>AS 3</projectType>
+		<version>1.0</version>
+	<description>This template will create a haXe / Neko project.</description>
+	<variables>
+	</variables>
+	
+	<extensions>
+		<haxe>
+			<hxmlPath>compile.hxml</hxmlPath>
+			<mainClass>Main</mainClass>
+			<outputPath>bin/Main.n</outputPath>
+			<outputType>Neko Binary</outputType>
+		</haxe>
+	</extensions>	
+
+	<expressions>
+	</expressions>
+	
+	<folders>
+		<sourceFolder>src</sourceFolder>		
+		<outputFolder>placeholder</outputFolder>
+	</folders>
+	
+	<contentCreation processFileExtensions="as,mxml,xml,launch,html,hx">
+		
+		<folder src="src" dest="src" process="true" recursive="true" />
+		<folder src="bin" dest="bin" process="true" recursive="true" />
+		
+	</contentCreation>
+	
+</tns:projectTemplate>
