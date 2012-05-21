@@ -18,3 +18,11 @@ Win XP: `C:\Documents and Settings\username\Application Data\FDT\projectTemplate
 Windows 7: `C:\Users\username\AppData\Roaming\FDT\projectTemplates\haXe`
 
 Mac: `/Users/username/Library/Application Support/FDT/projectTemplates/haXe`
+
+
+Note for FDT 5.5 users!!!!!!
+-------------------------
+
+I found this project after FDT 5.5 came out and they would not show up in the project wizard for some reason. I created an NME 5.5 directory and that's the one that you want to work from if you are running 5.5. I've not started on the CPP version yet. 
+
+The only thing that's not working that I would like some help on is variables from the project wizard are not being set in the compile.nmml file for some reason. Other than that it works for the most part.
