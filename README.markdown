@@ -26,3 +26,8 @@ Note for FDT 5.5 users!!!!!!
 I found this project after FDT 5.5 came out and they would not show up in the project wizard for some reason. I created an NME 5.5 directory and that's the one that you want to work from if you are running 5.5. I've not started on the CPP version yet. 
 
 The only thing that's not working that I would like some help on is variables from the project wizard are not being set in the compile.nmml file for some reason. Other than that it works for the most part.
+
+
+Ant Task Improvements in FDT 5.5.1
+-----------------------------------
+The FDT team as of 5.5.1 has added Ant Task Improvements so that you can now create a debug config around you ant builds. This is huge for NME users that are using this project template. Will no longer have to go to the ant panel to launch the NME build. Command + F11 FTW!!! Here is a link to the vimeo video showing the new feature http://vimeo.com/41847484
