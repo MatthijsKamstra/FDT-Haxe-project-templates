@@ -3,7 +3,7 @@
 clear
 echo '----------------------------------------------------------'
 echo 'Automation script for Neko project "${projectName}"'
-echo '    - compile the haXe code'
+echo '    - compile the Haxe code'
 echo '    - create an executable'
 echo '    - open the "${outputFolder}/${mainClassName}.n" file'
 echo '----------------------------------------------------------'
@@ -11,7 +11,7 @@ echo '----------------------------------------------------------'
 BASEDIR=$(dirname $0)
 # echo $BASEDIR
 
-# set dir to the 'root' dir for haXe compiler
+# set dir to the 'root' dir for Haxe compiler
 cd $BASEDIR/../
 haxe compile.hxml
 
