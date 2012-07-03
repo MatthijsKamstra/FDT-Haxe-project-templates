@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:projectTemplate xmlns:tns="http://fdt.powerflasher.com/ProjectTemplate"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://fdt.powerflasher.com/ProjectTemplate ../../projectTemplate.xsd">
+	<name>Neko</name>
+	<projectType>Web</projectType>
+	<version>2.5</version>
+	<description>This template will create a haXe / Neko project named '${projectName}'.${newline}</description>
+	<variables>
+		<primaryGroup label="">
+			<variable name="mainClassName" label="Main Class:" type="string" default="Main"></variable>
+			<group label="Package:">
+				<variable name="domainName" label="Domain Name" default="com" type="string" />
+				<variable name="clientFolderName" label="Client Name" default="clientname" type="string" />
+				<variable name="projectFolderName" label="Project Name" default="projectname" type="string" />
+			</group>
+		</primaryGroup>
+	</variables>
+	
+	<extensions>
+		<haxe>
+			<hxmlPath>compile.hxml</hxmlPath>
+			<mainClass>${domainName}.${clientFolderName}.${projectFolderName}.${mainClassName}</mainClass>
+			<outputPath>${outputFolder}/${mainClassName}.n</outputPath>
+			<outputType>Neko Binary</outputType>
+		</haxe>
+	</extensions>	
+
+	<expressions>
+		<expression name="sourceFolder" value="src" />
+		<expression name="outputFolder" value="bin" />
+	</expressions>
+	
+	<folders>
+		<sourceFolder>${sourceFolder}</sourceFolder>
+		<outputFolder>${outputFolder}</outputFolder>
+	</folders>
+	
+	<contentCreation processFileExtensions="as,mxml,xml,launch,html,hx,txt,sh,bat">
+		<!-- folder -->
+		<folder src="src" dest="${sourceFolder}" process="true" recursive="true" />
+		<folder src="bin" dest="${outputFolder}" process="true" recursive="true" />
+		<folder src="builder" dest="builder" process="true" recursive="true" />
+		
+		<!-- file -->
+		<file src="hx/Main.hx" dest="${sourceFolder}/${domainName}/${clientFolderName}/${projectFolderName}/${mainClassName}.hx" process="true" />
+		<!--
+		<file src="hx/readme.txt" dest="readme.txt" process="true" />
+		<file src="hx/compile.sh" dest="compile.sh" process="true" />
+		-->
+	</contentCreation>
+	
+</tns:projectTemplate>
