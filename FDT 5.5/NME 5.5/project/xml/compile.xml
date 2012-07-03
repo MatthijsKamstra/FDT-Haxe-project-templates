@@ -1,8 +1,0 @@
--swf-version 11.1
--swf bin/swf/${mainClassName}.swf
--main ${mainClassName}
--cp src
--lib nme
--lib actuate
--lib nape
--lib xirsys_cube
