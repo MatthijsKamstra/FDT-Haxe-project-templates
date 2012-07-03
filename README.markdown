@@ -1,7 +1,7 @@
 Missing Neko and NME project templates for FDT5
 ================================
 
-The current project template for haXe are basic. And missing Neko and NME.<br>
+The current project template for Haxe are basic. And missing Neko and NME.<br>
 I hope this will fix this.
 
 <img src="https://github.com/MatthijsKamstra/FDT-Haxe-project-templates/raw/master/assets/fdt_haxe_nme_projecttemplate.png">

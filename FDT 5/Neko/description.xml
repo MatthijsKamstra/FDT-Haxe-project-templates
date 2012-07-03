@@ -5,7 +5,7 @@
 	<name>Neko</name>
 	<projectType>AS 3</projectType>
 	<version>1.0</version>
-	<description>This template will create a haXe / Neko project named '${projectName}'.${newline}</description>
+	<description>This template will create a Haxe / Neko project named '${projectName}'.${newline}</description>
 	<variables>
 		<primaryGroup label="">
 			<variable name="mainClassName" label="Main Class:" type="string" default="Main"></variable>

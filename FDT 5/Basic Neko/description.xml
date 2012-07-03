@@ -5,7 +5,7 @@
 	<name>Basic Neko</name>
 	<projectType>AS 3</projectType>
 		<version>1.0</version>
-	<description>This template will create a haXe / Neko project.</description>
+	<description>This template will create a Haxe / Neko project.</description>
 	<variables>
 	</variables>
 	

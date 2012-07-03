@@ -5,7 +5,7 @@
 	<name>Neko</name>
 	<projectType>Web</projectType>
 	<version>2.5</version>
-	<description>This template will create a haXe / NME project named '${projectName}'.${newline}!! Make sure the 'Project name:' starts with an capital (example: Foobar)${newline}This template doesn't install sdk-s'${newline}http://www.haxenme.org/developers/get-started/ </description>
+	<description>This template will create a Haxe / NME project named '${projectName}'.${newline}!! Make sure the 'Project name:' starts with an capital (example: Foobar)${newline}This template doesn't install sdk-s'${newline}http://www.haxenme.org/developers/get-started/ </description>
 	<variables>
 		<primaryGroup label="">
 			<variable name="appId" label="Application ID:" default="com.powerflasher.sampleApp" type="string" />

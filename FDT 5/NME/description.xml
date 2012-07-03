@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://fdt.powerflasher.com/ProjectTemplate ../../projectTemplate.xsd">
 	<name>NME - haXe</name>
 	<version>1.0</version>
-	<description>This template will create a haXe / NME project named '${projectName}'.${newline}!! Make sure the 'Project name:' starts with an capital (example: Foobar)${newline}This template doesn't install sdk-s'${newline}http://www.haxenme.org/developers/get-started/ </description>
+	<description>This template will create a Haxe / NME project named '${projectName}'.${newline}!! Make sure the 'Project name:' starts with an capital (example: Foobar)${newline}This template doesn't install sdk-s'${newline}http://www.haxenme.org/developers/get-started/ </description>
 	<projectType>AS 3</projectType>
 	<variables>
 		<primaryGroup label="">

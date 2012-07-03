@@ -5,7 +5,7 @@ class Main {
 	}
 	
 	public static function main() {
-		trace("Hello From FDT haXe !");
+		trace("Hello From FDT Haxe (Basic Neko)!");
 		new Main();
 	}
 }

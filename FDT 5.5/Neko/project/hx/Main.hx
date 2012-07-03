@@ -8,7 +8,7 @@ class ${mainClassName} {
 	
 	// entry point
 	public static function main() {
-		trace("Hello From FDT haXe !");
+		trace("Hello From FDT Haxe (Neko)!");
 		new ${mainClassName}();
 	}
 }
