@@ -2,7 +2,7 @@
 <tns:projectTemplate xmlns:tns="http://fdt.powerflasher.com/ProjectTemplate"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://fdt.powerflasher.com/ProjectTemplate ../../projectTemplate.xsd">
-	<name>Neko</name>
+	<name>NME</name>
 	<projectType>Web</projectType>
 	<version>2.5</version>
 	<description>This template will create a Haxe / NME project named '${projectName}'.${newline}!! Make sure the 'Project name:' starts with an capital (example: Foobar)${newline}This template doesn't install sdk-s'${newline}http://www.haxenme.org/developers/get-started/ </description>
